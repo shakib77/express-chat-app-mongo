@@ -1,0 +1,60 @@
+# Node modules (pnpm specific)
+node_modules/
+.pnpm/
+.pnpm-debug.log
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports
+coverage/
+*.lcov
+
+# pnpm package files
+*.tgz
+
+# Optional pnpm cache directory
+.pnpm-store/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# eslint cache
+.eslintcache
+
+# lock files (pnpm specific)
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+
+# Debug files
+*.swp
+*.swo
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# MacOS files
+.DS_Store
+
+# SFTP configuration file
+*.sftp-config.json
