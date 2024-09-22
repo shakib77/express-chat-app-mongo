@@ -6,9 +6,18 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": ["chat", "real-time", "file-sharing", "socket.io"],
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["./tests/setup.js"]
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "file-sharing",
+    "socket.io"
+  ],
   "author": "Nazmus Shakib",
   "license": "ISC",
   "dependencies": {
@@ -23,6 +32,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.0.1",
     "nodemon": "^3.1.7",
     "supertest": "^7.0.0"
   }

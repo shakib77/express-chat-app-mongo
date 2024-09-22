@@ -6,6 +6,7 @@ const router = express.Router();
 router.post('/register', async (req, res) => {
     try {
         const user = new User(req.body);
+        console.log('res=>',req.body);
         await user.save();
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
         res.status(201).send({ user, token });
